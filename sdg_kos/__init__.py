@@ -14,4 +14,4 @@ def get_locale():
     #print(locale)
     return locale
 
-from app.routes import *
+from sdg_kos.routes import *
