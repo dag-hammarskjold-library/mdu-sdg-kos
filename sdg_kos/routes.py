@@ -13,4 +13,9 @@ thesaurus = Thesaurus(pool_party)
 @app.route('/')
 def index():
     return_data = thesaurus.get_concept(concept='http://metadata.un.org/sdg/kos')
-    return(render_template('index.html', data=return_data))
+    return render_template('index.html', data=return_data)
+
+@app.route('/<id>')
+def get_concept_landing(id):
+    return_data = thesaurus.get_concept(concept='http://metadata.un.org/sdg/kos/%s' % id)
+    return render_template('index.html', data=return_data)
