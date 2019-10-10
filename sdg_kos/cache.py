@@ -1,5 +1,5 @@
 from flask_caching import Cache
-from app.config import Config
+from sdg_kos.config import Config
 
 cache_servers = Config.cache_servers
 

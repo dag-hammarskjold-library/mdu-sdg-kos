@@ -1,7 +1,7 @@
 from flask import Flask, request
-from app.cache import cache
+from sdg_kos.cache import cache
 from flask_babel import Babel, gettext
-from app.config import Config
+from sdg_kos.config import Config
 
 # Initialize your application.
 app = Flask(__name__)
